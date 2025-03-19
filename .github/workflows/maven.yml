@@ -17,11 +17,11 @@ vision:
   tag: sha-7899
   region: ap-northeast-1
 bre:
-  tag: sha-22222
+  tag: sha-hjkkkk
   region: ap-northeast-1
 dwh:
   tag: sha-22222
-  region: ap-northeast-1    
+  region: ap-northeast-1
 env:
   REQUEST_LOG_LEVEL: INFO
   DEPLOYMENT_ENV: production
