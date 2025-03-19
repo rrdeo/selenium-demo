@@ -11,7 +11,7 @@ mpoint:
   tag: sha-11111
   region: eu-central-1
 mretail:
-  tag: sha-22222
+  tag: sha-jhgkk
   region: ap-northeast-1
 vision:
   tag: sha-7899
