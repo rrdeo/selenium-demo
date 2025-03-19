@@ -1,12 +1,13 @@
-mvault:
-    tag: sha-78678
-hpp:
-    tag: sha-99999
-mseb:
+shared_data:
+  mvault:
+    tag: sha-76576
+  hpp:
+    tag: sha-12345
+  mseb:
     tag: sha-abcde
-point:
+  point:
     tag: sha-11111
-vision:
+  vision:
     tag: sha-22222
 env:
-    REQUEST_LOG_LEVEL: INFO
+  REQUEST_LOG_LEVEL: INFO
