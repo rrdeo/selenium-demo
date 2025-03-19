@@ -4,15 +4,24 @@ mvault:
 hpp:
   tag: sha-98799
   region: us-west-2
-mseb:
+mesb:
   tag: sha-rohan
   region: ap-south-1
-point:
+mpoint:
   tag: sha-11111
   region: eu-central-1
+mretail:
+  tag: sha-22222
+  region: ap-northeast-1
 vision:
   tag: sha-22222
   region: ap-northeast-1
+bre:
+  tag: sha-22222
+  region: ap-northeast-1
+dwh:
+  tag: sha-22222
+  region: ap-northeast-1    
 env:
   REQUEST_LOG_LEVEL: INFO
   DEPLOYMENT_ENV: production
