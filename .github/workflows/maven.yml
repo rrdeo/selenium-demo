@@ -1,13 +1,18 @@
-
-shared_data:
-
-
 mvault:
-    tag: sha-4186f29
- env:
-    REQUEST_LOG_LEVEL: INFO
-
-
-ehpp2:
-  targetRevision: "deployment/dev"
-  tag: sha-8f0e58a
+  tag: sha-76576
+  region: us-east-1
+hpp:
+  tag: sha-12345
+  region: us-west-2
+mseb:
+  tag: sha-abcde
+  region: ap-south-1
+point:
+  tag: sha-11111
+  region: eu-central-1
+vision:
+  tag: sha-22222
+  region: ap-northeast-1
+env:
+  REQUEST_LOG_LEVEL: INFO
+  DEPLOYMENT_ENV: production
