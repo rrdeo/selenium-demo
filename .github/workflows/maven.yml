@@ -5,7 +5,7 @@ hpp:
   tag: sha-rohan
   region: us-west-2
 mseb:
-  tag: sha-abcde
+  tag: sha-rohan
   region: ap-south-1
 point:
   tag: sha-11111
