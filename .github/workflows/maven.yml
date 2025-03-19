@@ -14,7 +14,7 @@ mretail:
   tag: sha-22222
   region: ap-northeast-1
 vision:
-  tag: sha-22222
+  tag: sha-7899
   region: ap-northeast-1
 bre:
   tag: sha-22222
