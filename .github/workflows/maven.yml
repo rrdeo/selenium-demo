@@ -2,7 +2,7 @@ mvault:
   tag: sha-76576
   region: us-east-1
 hpp:
-  tag: sha-rohan
+  tag: sha-98799
   region: us-west-2
 mseb:
   tag: sha-rohan
