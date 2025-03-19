@@ -1,76 +1,23 @@
-name: UAT HPP Automation Test Job
+mvault:
+  tag: sha-78678
+  region: us-east-1
 
-on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Select the environment'
-        required: true
-        default: 'UAT-RADISSON'
-        options:
-          - 'UAT-VA'
-          - 'UAT-RADISSON'
-          - 'UAT-BEONDAIR'
-          - 'UAT-MTC'
-          - 'UAT-APS'
-          - 'UAT-MIRKO'
-          - 'UAT-REDFOX'
-          - 'UAT-ELITEDIAS'
-          - 'UAT-SPEEDYNINJA'
-      tags:
-        description: 'Select the tag'
-        required: true
-        default: '@UATSmoke'
-        options:
-          - '@UATSmoke'
+hpp:
+  tag: sha-12345
+  region: us-west-2
 
-      browsertype:
-        description: 'Select the Remote Browser'
-        required: true
-        default: 'remote-chrome'
-        type: choice
-        options:
-          - 'remote-chrome'
-          - 'remote-firefox'
-          - 'remote-edge'
+mseb:
+  tag: sha-abcde
+  region: ap-south-1
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    env:
-      TAGS: ${{ inputs.tags }}
-      environment: ${{ github.event.inputs.environment }}
-      BROWSER: ${{ inputs.browsertype }}
+point:
+  tag: sha-11111
+  region: eu-central-1
 
-    steps:
-      - uses: actions/checkout@v4
+vision:
+  tag: sha-22222
+  region: ap-northeast-1
 
-      - name: Set up JDK 11
-        uses: actions/setup-java@v4
-        with:
-          java-version: '11'
-          distribution: 'temurin'
-          cache: maven
-
-      - uses: twingate/github-action@v1
-        with:
-          service-key: ${{ secrets.TG_SA_SIT_QA }}
-
-      - name: Set up date timestamp
-        run: echo "build_execution_time=$(date +'%-d-%b-%y_%H-%M-%S')" >> $GITHUB_ENV
-
-      - name: Set NODE_OPTIONS environment variable
-        run: echo "NODE_OPTIONS='--trace-deprecation'" >> $GITHUB_ENV
-
-        # On Demand execution
-      - name: Build with Maven 2
-        if: github.event_name == 'workflow_dispatch'
-        run: mvn -B package --file pom.xml clean test -Dcucumber.filter.tags="${{env.TAGS}}" -Denv=${{env.environment}} -Dbrowsertype="${{env.BROWSER}}"
-
-      - name: Upload a Build Artifact after execution
-        if: always()
-        
-        uses: actions/upload-artifact@v4
-        with:
-          name: HPP-${{ env.environment }}_ExecutionReport_${{ env.build_execution_time }}
-          path: test-output/*
+env:
+  REQUEST_LOG_LEVEL: INFO
+  DEPLOYMENT_ENV: production
