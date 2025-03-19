@@ -74,18 +74,3 @@ jobs:
         with:
           name: HPP-${{ env.environment }}_ExecutionReport_${{ env.build_execution_time }}
           path: test-output/*
-
-
-shared_data:
-  mvault:
-    tag: sha-76576
-  hpp:
-    tag: sha-12345
-  mseb:
-    tag: sha-abcde
-  point:
-    tag: sha-11111
-  vision:
-    tag: sha-22222
-env:
-  REQUEST_LOG_LEVEL: INFO
