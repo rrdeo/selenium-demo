@@ -5,7 +5,7 @@ hpp:
   tag: sha-98799
   region: us-west-2
 mesb:
-  tag: sha-rohan
+  tag: sha-35456
   region: ap-south-1
 mpoint:
   tag: sha-11111
