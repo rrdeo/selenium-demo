@@ -17,7 +17,7 @@ vision:
   tag: sha-7899
   region: ap-northeast-1
 bre:
-  tag: sha-hjkkkk
+  tag: sha-jhgmm
   region: ap-northeast-1
 dwh:
   tag: sha-22222
