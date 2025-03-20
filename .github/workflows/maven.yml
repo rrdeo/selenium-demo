@@ -20,7 +20,7 @@ bre:
   tag: sha-jhgmm
   region: ap-northeast-1
 dwh:
-  tag: sha-22222
+  tag: sha-tytujj
   region: ap-northeast-1
 env:
   REQUEST_LOG_LEVEL: INFO
