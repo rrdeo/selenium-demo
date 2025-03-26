@@ -8,7 +8,7 @@ mesb:
   tag: mesb-1234
   region: ap-south-1
 mpoint:
-  tag: sha-hgnbhvv12
+  tag: sha-32456
   region: eu-central-1
 mretail:
   tag: sha-hhhhjjj
