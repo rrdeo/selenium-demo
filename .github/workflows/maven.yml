@@ -5,7 +5,7 @@ hpp:
   tag: tga-asas
   region: us-west-2
 mesb:
-  tag: sha-6565
+  tag: mesb-1234
   region: ap-south-1
 mpoint:
   tag: sha-hgnbhvv12
