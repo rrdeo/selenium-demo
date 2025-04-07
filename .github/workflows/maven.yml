@@ -2,7 +2,7 @@ mvault:
   tag: sha-76576
   region: us-east-1
 hpp:
-  tag: tga-asas
+  tag: sha-786ats
   region: us-west-2
 mesb:
   tag: mesb-1234
