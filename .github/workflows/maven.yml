@@ -5,7 +5,7 @@ hpp:
   tag: sha-786ats
   region: us-west-2
 mesb:
-  tag: sha-buildreq123
+  tag: 2.98.6-Kingstown
   region: ap-south-1
 mpoint:
   tag: sha-32456
